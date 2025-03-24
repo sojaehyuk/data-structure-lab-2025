@@ -13,7 +13,7 @@ int findArrayMax(int score[], int n)
 
 void main()
 {
-	int score[5] = { 1, 9, 2, 4, 5 };
+	int score[5] = { 1, 11, 2, 4, 5 };
 	int out;
 	out = findArrayMax(score, 5);
 	printf("result= %d", out);

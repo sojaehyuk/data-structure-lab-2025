@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\user\\Documents\\data-structure-lab-2025\\HelloWorld\\",
+  "WorkspaceRootPath": "C:\\Users\\sirwt\\OneDrive\\\uBB38\uC11C\\data-structure-lab-2025\\HelloWorld\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7BA5D14A-BFB5-42A7-9901-7FEBF099B349}|HelloWorld\\HelloWorld.vcxproj|C:\\Users\\user\\Documents\\data-structure-lab-2025\\HelloWorld\\HelloWorld\\hello_world.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{7BA5D14A-BFB5-42A7-9901-7FEBF099B349}|HelloWorld\\HelloWorld.vcxproj|C:\\Users\\sirwt\\OneDrive\\\uBB38\uC11C\\data-structure-lab-2025\\HelloWorld\\HelloWorld\\hello_world.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7BA5D14A-BFB5-42A7-9901-7FEBF099B349}|HelloWorld\\HelloWorld.vcxproj|solutionrelative:HelloWorld\\hello_world.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -14,19 +14,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "hello_world.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\data-structure-lab-2025\\HelloWorld\\HelloWorld\\hello_world.cpp",
+              "DocumentMoniker": "C:\\Users\\sirwt\\OneDrive\\\uBB38\uC11C\\data-structure-lab-2025\\HelloWorld\\HelloWorld\\hello_world.cpp",
               "RelativeDocumentMoniker": "HelloWorld\\hello_world.cpp",
-              "ToolTip": "C:\\Users\\user\\Documents\\data-structure-lab-2025\\HelloWorld\\HelloWorld\\hello_world.cpp",
+              "ToolTip": "C:\\Users\\sirwt\\OneDrive\\\uBB38\uC11C\\data-structure-lab-2025\\HelloWorld\\HelloWorld\\hello_world.cpp",
               "RelativeToolTip": "HelloWorld\\hello_world.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
