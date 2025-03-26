@@ -1,9 +1,9 @@
 #include<stdio.h>
-#define MAX_SIZE	9
+#define MAX_SIZE	10
 
 void sub(int x, int arr[]) {
 	x = 10;
-	arr[0] = 9;
+	arr[0] = 11;
 }
 void main()
 {
