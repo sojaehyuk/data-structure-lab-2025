@@ -4,7 +4,7 @@
 //STL vector
 #include<vector>
 
-using namespace.std;
+using namespace std;
 
 
 class Music {
@@ -14,7 +14,7 @@ private:
 	string album;
 	int year;
 
-public
+public:
 	Music(string title, string artist, string album, int year) {
 	this->title = title;
 	this->artist = artist;
@@ -25,7 +25,7 @@ public
 
 };
 
-class Musicstreamingservice {
+class MusicStreamingService {
 
 	//음악 추가 기능
 
