@@ -1,4 +1,6 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
+#include <cstdio> 
 using namespace std;
 
 int getMaxValue(int arr[], int size) {
@@ -12,19 +14,19 @@ int getMaxValue(int arr[], int size) {
 }
 
 int main() {
-    // 예시 배열들
-    int arr1[] = { 3, 7, 2, 9, 10, 5 };
-    int arr2[] = { -10, -5, -3 };
-    int arr3[] = { 100, 200, 300, 50, 400 };
-    int arr4[] = { 0, 0, -2, 0 };
-    int arr5[] = { 10000 };
+    int n;
+    printf("배열의 크기를 입력하세요: ");
+    scanf("%d", &n);
 
-    // 결과 출력
-    cout << getMaxValue(arr1, 6) << endl;  // 10
-    cout << getMaxValue(arr2, 3) << endl;  // -3
-    cout << getMaxValue(arr3, 5) << endl;  // 400
-    cout << getMaxValue(arr4, 4) << endl;  // 0
-    cout << getMaxValue(arr5, 1) << endl;  // 10000
+    int arr[100]; 
+    printf("%d개의 배열 값을 입력하세요: ", n);
+    for (int i = 0; i < n; ++i) {
+        scanf("%d", &arr[i]);
+    }
+
+    int maxValue = getMaxValue(arr, n);
+    printf("최댓값: %d\n", maxValue);
 
     return 0;
 }
+

@@ -5,18 +5,18 @@
 #include <vector>
 using namespace std;
 
-#define MAX_DEGREE 101 // 최대 차수 정의 (예: 0~100)
+#define MAX_DEGREE 101 
 
 class SparsePoly {
-    int numTerms;                        // 항의 개수
-    vector<int> exponents;              // 차수 저장 벡터
-    vector<float> coefficients;         // 계수 저장 벡터
+    int numTerms;                        
+    vector<int> exponents;             
+    vector<float> coefficients;         
 
 public:
-    // 생성자
+    
     SparsePoly() : numTerms(0) {}
 
-    // 다항식 입력 함수
+    
     void read() {
         cout << "항의 개수를 입력하세요: ";
         cin >> numTerms;
@@ -30,7 +30,7 @@ public:
         }
     }
 
-    // 다항식 출력 함수
+   
     void display(const char* str) {
         cout << str;
         for (int i = 0; i < numTerms; ++i) {
@@ -40,7 +40,7 @@ public:
         cout << endl;
     }
 
-    // 다항식 덧셈 함수
+    
     void add(SparsePoly a, SparsePoly b) {
         int i = 0, j = 0;
         while (i < a.numTerms && j < b.numTerms) {
@@ -65,7 +65,7 @@ public:
             }
         }
 
-        // 남은 항들 추가
+      
         while (i < a.numTerms) {
             coefficients.push_back(a.coefficients[i]);
             exponents.push_back(a.exponents[i]);
