@@ -31,67 +31,6 @@ void main()
 }
 */
 
-
-#include<Music.h>
-
-int main()
-{
-	//MusicStreamingService 생성
-	MusicStreamingService my_service("spotify");
-	my_service.addMusic("PolaroidLove", "ENHYPEN", "DIMENSION", 2022);
-	my_service.addMusic("Ditto", "Newjeans", "ALBUM", 2023);
-	my_service.addMusic("Cake", "ITZY", "ALBUM", 2023);
-
-
-	// search music by title
-	string music_title;
-	cout << "Enter the Music Title: ";
-	cin >> music_title; // 사용자가 입력
-	Music* result = my_service.searchByTitle(music_title);
-	if (result != NULL) {
-		cout << "Found:" << result->grtTitle() << " by " << result->getArtist << endl;
-	}
-	else {
-		cout << "not found" << endl;
-	}
-
-}
------------------------------------------------------------------------------------------------------------------------- -
-/*
-#include "Complex.h"
-#include "Car.h"
-#include "SportsCar.h"
-void main()
-{
-
-	Complex a, b, c;
-	a.read ("A = ");
-	b.read ("B = ");
-	c.add (a, b);
-	a.print ("A = ");
-	b.print ("B = ");
-	c.print ("A+B= ");
-
-	Car myCar(9, "K3",2);
-	Car momCar(10, "K5", 1);
-	SportsCar mysecCar(99, "911", 2);
-
-	myCar.whereAmI();
-	momCar.whereAmI();
-	myCar.changeGear(3);
-	myCar.display();
-
-	//4.2일
-
-	SportsCar.
-
-
-
-}
-*/
-
-//#include "Complex.h"
-//#include "SportsCar.h"
 #include "Music.h"
 
 

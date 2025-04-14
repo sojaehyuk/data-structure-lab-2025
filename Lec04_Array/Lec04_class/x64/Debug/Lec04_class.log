@@ -1,9 +1,2 @@
 ﻿  main.cpp
-C:\Users\user\Documents\data-structure-lab-2025\Lec04_Array\Lec04_class\Car.h(25,27): warning C4477: 'printf' : 서식 문자열 '%x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'Car *'입니다.
-  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\user\Documents\data-structure-lab-2025\Lec04_Array\Lec04_class\Car.h(25,27): warning C4313: 'printf': 서식 문자열의 '%x'이(가) Car *' 형식의 인수 1과(와) 충돌합니다.
-  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\user\Documents\data-structure-lab-2025\Lec04_Array\Lec04_class\main.cpp(3,6): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
-  Lec04_class.vcxproj -> C:\Users\user\Documents\data-structure-lab-2025\Lec04_Array\x64\Debug\Lec04_Class.exe
+  Lec04_class.vcxproj -> C:\Users\sirwt\OneDrive\문서\data-structure-lab-2025\Lec04_Array\x64\Debug\Lec04_Class.exe
