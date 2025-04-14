@@ -4,7 +4,7 @@
 #include "SportsCar.h"
 void main()
 {
-	
+
 	Complex a, b, c;
 	a.read ("A = ");
 	b.read ("B = ");
@@ -12,7 +12,7 @@ void main()
 	a.print ("A = ");
 	b.print ("B = ");
 	c.print ("A+B= ");
-	
+
 	Car myCar(9, "K3",2);
 	Car momCar(10, "K5", 1);
 	SportsCar mysecCar(99, "911", 2);
@@ -21,19 +21,122 @@ void main()
 	momCar.whereAmI();
 	myCar.changeGear(3);
 	myCar.display();
-	
+
 	//4.2일
 
 	SportsCar.
 
 
-	
+
 }
 */
+
 
 #include<Music.h>
 
 int main()
 {
-	Music myMusic("");
+	//MusicStreamingService 생성
+	MusicStreamingService my_service("spotify");
+	my_service.addMusic("PolaroidLove", "ENHYPEN", "DIMENSION", 2022);
+	my_service.addMusic("Ditto", "Newjeans", "ALBUM", 2023);
+	my_service.addMusic("Cake", "ITZY", "ALBUM", 2023);
+
+
+	// search music by title
+	string music_title;
+	cout << "Enter the Music Title: ";
+	cin >> music_title; // 사용자가 입력
+	Music* result = my_service.searchByTitle(music_title);
+	if (result != NULL) {
+		cout << "Found:" << result->grtTitle() << " by " << result->getArtist << endl;
+	}
+	else {
+		cout << "not found" << endl;
+	}
+
+}
+------------------------------------------------------------------------------------------------------------------------ -
+/*
+#include "Complex.h"
+#include "Car.h"
+#include "SportsCar.h"
+void main()
+{
+
+	Complex a, b, c;
+	a.read ("A = ");
+	b.read ("B = ");
+	c.add (a, b);
+	a.print ("A = ");
+	b.print ("B = ");
+	c.print ("A+B= ");
+
+	Car myCar(9, "K3",2);
+	Car momCar(10, "K5", 1);
+	SportsCar mysecCar(99, "911", 2);
+
+	myCar.whereAmI();
+	momCar.whereAmI();
+	myCar.changeGear(3);
+	myCar.display();
+
+	//4.2일
+
+	SportsCar.
+
+
+
+}
+*/
+
+//#include "Complex.h"
+//#include "SportsCar.h"
+#include "Music.h"
+
+
+int main()
+{
+	// music streaming service를 생성
+	MusicStreamingService my_service("spotify");
+
+	// add music to music streaming service
+	my_service.addMusic("PolaroidLove", "ENHYPEN", "DIMENSION", 2022);
+	my_service.addMusic("Ditto", "NewJeans", "ALBUM", 2023);
+	my_service.addMusic("Attention", "NewJeans", "ALBUM", 2023);
+	my_service.addMusic("CAKE", "ITZY", "ALBUM", 2023);
+	my_service.addMusic("SundayMorning", "Maroon5", "ALBUM", 2023);
+	my_service.addMusic("Sugar", "Maroon5", "ALBUM", 2015);
+	// add by user
+	// music 객체 선언 --> 사용자 입력받기 (cin 사용)
+	// 입력받은 값을 선언한 music객체 멤버변수에 하나씩 채우기
+	// 마지막으로 music객체 my_service의 music_list에 push_back()
+
+	// search music by title
+	string music_title;
+	cout << "Enter the Music Title: ";
+	cin >> music_title;
+	Music* result = my_service.searchByTitle(music_title);
+	if (result != NULL) {
+		cout << "Found: " << result->getTitle() << " by " << result->getArtist() << endl;
+	}
+	else {
+		cout << "not found" << endl;
+	}
+	// search music by artist
+	string artist_name;
+	cout << "Enter the Artist Name: ";
+	cin >> artist_name;
+	vector<Music*> artist_result = my_service.searchByArtist(artist_name);
+	if (artist_result.size() > 0) {
+		cout << "Found " << artist_result.size() << " songs by " << artist_name << " : " << endl;
+		for (int i = 0; i < artist_result.size(); i++) {
+			cout << artist_result[i]->getTitle() << endl;
+		}
+
+	}
+	else {
+		cout << "Not found" << endl;
+	}
+	return 0;
 }
